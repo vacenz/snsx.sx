@@ -1,0 +1,11 @@
+svg {
+  width: 400px;
+  height: 400px;
+}
+body {
+  background: #161616;
+}
+
+svg {
+  visibility: hidden;
+}
