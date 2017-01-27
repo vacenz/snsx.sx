@@ -15,7 +15,6 @@ html, body {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   margin: 0;
-  position: absolute;
   font-size: 8em;
 }
 
@@ -29,6 +28,20 @@ html, body {
   margin: 0;
 }
 
+.SNSX__Description___N2Uzt {
+  font-family: "VT323";
+  z-index: 100;
+  font-size: 1.4em;
+  color: white;
+  margin: 0;
+}
+.SNSX__Forum___22m4V {
+  text-align: right;
+  display: block;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
 .SNSX__Wrapper___E-j-m {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,23 +49,70 @@ html, body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.SNSX__Column___1w_tZ {
+
+.SNSX__ColumnTriangle___vBsns {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.SNSX__ColumnHeading___KO3yj {
+  z-index: 100;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-.SNSX__ColumnLast___1HBsx {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.SNSX__ColumnForum___3jQzZ {
+  z-index: 100;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+.SNSX__ColumnFooter___9DvL- {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   z-index: 100;
 }
+
 
 .SNSX__Netball___2IpRs {
   width: 150px;
   display: block;
   margin: 1rem auto;
+}
+
+.SNSX__ColumnEmbedPlace___1KsVv {
+  display: none;
+}
+
+.SNSX__ColumnEmbed___1EMtq {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  z-index: 100;
+}
+
+/* sm (larger than 768px) */
+@media (min-width: 768px) {
+  .SNSX__ColumnEmbed___1EMtq {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
+  .SNSX__ColumnEmbedPlace___1KsVv {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    z-index: 100;
+  }
+
+}
+
+
+iframe {
+  border: 2px solid lime;
 }
 
 @-webkit-keyframes SNSX__example___1LwGN {
@@ -137,9 +197,17 @@ html, body {
   }
 }
 svg {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
+/* sm (larger than 768px) */
+@media (min-width: 768px) {
+  svg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 body {
   background: #161616;
 }

@@ -4,7 +4,8 @@
   "description": "Website for snsx",
   "main": "site/index.js",
   "scripts": {
-    "site": "npm run clean && NODE_ENV=prod webpack --config site/webpack.config.prod",
+    "site": "npm run clean && npm run css && NODE_ENV=prod webpack --config site/webpack.config.prod",
+    "css": "cp -r site/styles/*.css site/public",
     "clean": "rm public/bundle.js && rm public/style.css && rm public/vendor.js || true",
     "dev": "NODE_ENV=dev webpack-dev-server --port 3000 --inline --hot --config site/webpack.config"
   },
